@@ -1,0 +1,24 @@
+.tree-entry{
+    display: grid;
+    grid-template-columns: 20px 25px 200px 200px;
+}
+
+.tree-entry__icon{
+    width: 25px;
+}
+
+.tree-entry__name{
+padding-left: 10px;
+}
+
+.tree-entry__disclosure--closed::before{
+    content: "\25B6";
+}
+.tree-entry__disclosure--disabled::before{
+    content: "";
+}
+
+.tree-entry__disclosure--opened::before{
+    content: "\25BC";
+
+}

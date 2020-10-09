@@ -50,7 +50,7 @@ function updateVisualTreeEntry(treeElement, child) {
     // Create a list element with a file icon
     if (child.type === "file") {
         li.innerHTML = `
-          <div class="tree-entry__disclosure tree-entry__disclosure--disabled></div>
+          <div class="tree-entry__disclosure tree-entry__disclosure--disabled"></div>
           <img class="tree-entry__icon" src="/icons/file_type_${child.getIconTypeName()}.svg">
           <div class="tree-entry__name">${child.name}</div>
           <div class="tree-entry__time">${child.lastModifiedTime}</div>
